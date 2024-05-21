@@ -8,7 +8,7 @@ public class CacatuaCacahuete2 {
         Scanner scan = new Scanner(System.in);
         String comida;
         System.out.println();
-        Method.imprimir("Que hambre tiene tu cacatua! Vamos a preguntarle si quiere comer:", 1, 1);
+        Method.imprimir("Que hambre tiene tu cacatua "+Cacatua.getNombre()+"! Vamos a preguntarle si quiere comer:", 1, 1);
         
         System.out.println();
         boolean cacahuete = false;
@@ -26,7 +26,7 @@ public class CacatuaCacahuete2 {
 
                 if (comida.equalsIgnoreCase("cacahuete") || comida.equalsIgnoreCase("cacahuetes")) {
                     System.out.println();
-                    Method.imprimir("Cuantos cacahuetes quieres darle a Juana? ", 0, 1);
+                    Method.imprimir("Cuantos cacahuetes quieres darle a "+Cacatua.getNombre()+"? ", 0, 1);
                     cant = Method.validarInt(scan);
                     if (cant>0) {
                         for(int i = 0; i<cant; i++){
@@ -38,7 +38,7 @@ public class CacatuaCacahuete2 {
                         Method.imprimir("Ooooh! No le has dado ningún cacahuete!", 1, 1);
                     }
                     System.out.println();
-                    Method.imprimir("Quedan "+Cacatua.getCacahuete()+" cacahuetes para que se duerma Juana.", 1, 1);
+                    Method.imprimir("Quedan "+Cacatua.getCacahuete()+" cacahuetes para que se duerma "+Cacatua.getNombre()+".", 1, 1);
                 }
     
             }

@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Cacatua {
     private static int cantidadMinimaCacahuete = 100;
-    private static final String FRASE = "La cacatua Juana dice: ¡Cacatúa cacahuetes! y lo mínimo para que se calle son "+cantidadMinimaCacahuete+" cacahuetes.";
+    private static final String nombre = "Juana";
+    private static final String FRASE = "La cacatua "+nombre+" dice: ¡Cacatúa cacahuetes! y lo mínimo para que se calle son "+cantidadMinimaCacahuete+" cacahuetes.";
     private static final String PREGUNTA = "Que comida quieres darle a la cacatua? ";
     private static final String SEPARADOR = "------------------------------------------------------";
     public static String getAlimento (Scanner scan) {
@@ -17,10 +18,13 @@ public class Cacatua {
     public static void restaCacahuete (){
         cantidadMinimaCacahuete--;
     }
+
     public static int getCacahuete (){
         return cantidadMinimaCacahuete;
     }
-    
+    public static String getNombre (){
+        return nombre;
+    }
 
     static void dormirse() {
         Method.imprimir(
