@@ -1,4 +1,4 @@
-Instructions
+# Instructions
 1- (fácil) Entrenamiento (opcional)
 Tu amiga cacatúa está de vuelta!
 Tienes la clase Cacatua con un método static que cuando le llamas dice "Cacatúa cacahuete!".
